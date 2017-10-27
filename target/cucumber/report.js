@@ -13,15 +13,15 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 53666073,
+  "duration": 183886732,
   "status": "passed"
 });
 formatter.before({
-  "duration": 33489,
+  "duration": 31404,
   "status": "passed"
 });
 formatter.before({
-  "duration": 23609,
+  "duration": 14718,
   "status": "passed"
 });
 formatter.scenario({
@@ -125,19 +125,19 @@ formatter.match({
   "location": "CreateAcceptanceTestStepDefTemplate.scala:101"
 });
 formatter.result({
-  "duration": 412322637,
+  "duration": 374215140,
   "status": "passed"
 });
 formatter.after({
-  "duration": 161846260,
+  "duration": 154980945,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27094,
+  "duration": 19859,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20124,
+  "duration": 16930,
   "status": "passed"
 });
 });

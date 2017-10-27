@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="172b5a46-91d6-49b7-a039-fa8f90f4d4f5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-execution-log/ERROR_Create Acceptance Tests__01-10-2017_18:37:17:259.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-execution-log/ITS_Test_Execution_Log_01-10-2017_18:37:16:796.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-execution-log/ITS_Test_Execution_Log_01-10-2017_18:42:49:885.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmrc/integration/cucumber/utils/ParametersTemplate.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmrc/integration/cucumber/utils/ParametersTemplate.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/uk/gov/hmrc/integration/cucumber/utils/Runner.scala" afterPath="$PROJECT_DIR$/src/test/scala/uk/gov/hmrc/integration/cucumber/utils/Runner.scala" />
-    </list>
+    <list default="true" id="172b5a46-91d6-49b7-a039-fa8f90f4d4f5" name="Default" comment="" />
     <ignored path="income-tax-subscription-agent-acceptance-tests.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
