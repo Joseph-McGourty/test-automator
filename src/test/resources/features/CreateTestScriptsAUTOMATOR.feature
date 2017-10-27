@@ -27,14 +27,14 @@ Feature: Create Test Scripts
 
 #####################################################################################################################################################################################
 
-  Scenario: Create Acceptance Tests
-
-    When Scala files are read and performance test URLs are false ACCEPTANCE TESTS ARE CREATED
-
-#  Scenario: Create Performance Test Without URLs
+#  Scenario: Create Acceptance Tests
 #
-#    When Scala files are read and a performance test is created
-#
+#    When Scala files are read and performance test URLs are false ACCEPTANCE TESTS ARE CREATED
+
+  Scenario: Create Performance Test Without URLs
+
+    When Scala files are read and a performance test is created
+
 #  Scenario: Create Performance Tests With URLs
 #
 #    When Scala files are read and performance test URLs are true ACCEPTANCE TESTS ARE CREATED

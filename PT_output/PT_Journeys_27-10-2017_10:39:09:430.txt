@@ -1,0 +1,109 @@
+package uk.gov.hmrc.perftests.vfr
+
+import uk.gov.hmrc.performance.simulation.PerformanceTestRunner
+import uk.gov.hmrc.perftests.vfr.vfrRequests._
+
+class vfrSimulations extends PerformanceTestRunner {
+
+  setup("StubUser_journey1", "Journey 1 Description") withRequests(
+    navigateToUserstubbingservice,
+    submitUserstubbingservice,
+    navigateToUserstubbingservice,
+    submitUserstubbingservice
+  )
+
+  setup("ExampleSeleniumInputFile_ForPT_C_journey2", "Journey 2 Description") withRequests(
+    navigateToAuthorityWizard,
+    submitAuthorityWizard,
+    navigateToSignuptoreportyourclientsincomeandexpensesquarterly,
+    submitSignuptoreportyourclientsincomeandexpensesquarterly,
+    navigateToEnteryourclientsdetails,
+    submitEnteryourclientsdetails,
+    navigateToConfirmyourclient,
+    submitConfirmyourclient,
+    navigateToSelectyourclientsincometype,
+    submitSelectyourclientsincometype,
+    navigateToDoesyourclienthaveanyothersourcesofincome,
+    submitDoesyourclienthaveanyothersourcesofincome,
+    navigateToBusinessaccountingperiod,
+    submitBusinessaccountingperiod,
+    navigateToYoucantsendquarterlyreportsyet,
+    submitYoucantsendquarterlyreportsyet,
+    navigateToBusinessaccountingperiod,
+    submitBusinessaccountingperiod,
+    navigateToBusinessname,
+    submitBusinessname,
+    navigateToAccountingmethod,
+    submitAccountingmethod,
+    navigateToTermsofparticipation,
+    submitTermsofparticipation,
+    navigateToCheckyouranswers,
+    submitCheckyouranswers
+  )
+
+  setup("ExampleSeleniumInputFile_ForPT_D_journey3", "Journey 3 Description") withRequests(
+    navigateToAuthorityWizard,
+    submitAuthorityWizard,
+    navigateToSignuptoreportyourclientsincomeandexpensesquarterly,
+    submitSignuptoreportyourclientsincomeandexpensesquarterly,
+    navigateToEnteryourclientsdetails,
+    submitEnteryourclientsdetails,
+    navigateToConfirmyourclient,
+    submitConfirmyourclient,
+    navigateToSelectyourclientsincometype,
+    submitSelectyourclientsincometype,
+    navigateToYoucantsignupyourclientyet,
+    submitYoucantsignupyourclientyet
+  )
+
+  setup("ExampleSeleniumInputFile_ForPT_A_journey4", "Journey 4 Description") withRequests(
+    navigateToAuthorityWizard,
+    submitAuthorityWizard,
+    navigateToSignuptoreportyourclientsincomeandexpensesquarterly,
+    submitSignuptoreportyourclientsincomeandexpensesquarterly,
+    navigateToEnteryourclientsdetails,
+    submitEnteryourclientsdetails,
+    navigateToConfirmyourclient,
+    submitConfirmyourclient,
+    navigateToSelectyourclientsincometype,
+    submitSelectyourclientsincometype,
+    navigateToDoesyourclienthaveanyothersourcesofincome,
+    submitDoesyourclienthaveanyothersourcesofincome,
+    navigateToBusinessaccountingperiod,
+    submitBusinessaccountingperiod,
+    navigateToBusinessaccountingperiod,
+    submitBusinessaccountingperiod,
+    navigateToBusinessname,
+    submitBusinessname,
+    navigateToAccountingmethod,
+    submitAccountingmethod,
+    navigateToTermsofparticipation,
+    submitTermsofparticipation,
+    navigateToCheckyouranswers,
+    submitCheckyouranswers
+  )
+
+  setup("ExampleSeleniumInputFile_ForPT_B_journey5", "Journey 5 Description") withRequests(
+    navigateToAuthorityWizard,
+    submitAuthorityWizard,
+    navigateToSignuptoreportyourclientsincomeandexpensesquarterly,
+    submitSignuptoreportyourclientsincomeandexpensesquarterly,
+    navigateToEnteryourclientsdetails,
+    submitEnteryourclientsdetails,
+    navigateToConfirmyourclient,
+    submitConfirmyourclient,
+    navigateToSelectyourclientsincometype,
+    submitSelectyourclientsincometype,
+    navigateToDoesyourclienthaveanyothersourcesofincome,
+    submitDoesyourclienthaveanyothersourcesofincome,
+    navigateToYoucanonlysendquarterlyreportsonpartofyourclientsincome,
+    submitYoucanonlysendquarterlyreportsonpartofyourclientsincome,
+    navigateToTermsofparticipation,
+    submitTermsofparticipation,
+    navigateToCheckyouranswers,
+    submitCheckyouranswers
+  )
+
+  runSimulation()
+
+}

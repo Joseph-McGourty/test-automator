@@ -79,12 +79,24 @@
           {
             "line": 28,
             "value": "#####################################################################################################################################################################################"
+          },
+          {
+            "line": 30,
+            "value": "#  Scenario: Create Acceptance Tests"
+          },
+          {
+            "line": 31,
+            "value": "#"
+          },
+          {
+            "line": 32,
+            "value": "#    When Scala files are read and performance test URLs are false ACCEPTANCE TESTS ARE CREATED"
           }
         ],
         "before": [
           {
             "result": {
-              "duration": 183886732,
+              "duration": 51696341,
               "status": "passed"
             },
             "match": {
@@ -93,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 31404,
+              "duration": 23107,
               "status": "passed"
             },
             "match": {
@@ -102,7 +114,52 @@
           },
           {
             "result": {
-              "duration": 14718,
+              "duration": 16665,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 16319,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 15274,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 14900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 19462,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 23156,
               "status": "passed"
             },
             "match": {
@@ -110,14 +167,14 @@
             }
           }
         ],
-        "line": 30,
-        "name": "Create Acceptance Tests",
+        "line": 34,
+        "name": "Create Performance Test Without URLs",
         "description": "",
-        "id": "create-test-scripts;create-acceptance-tests",
+        "id": "create-test-scripts;create-performance-test-without-urls",
         "after": [
           {
             "result": {
-              "duration": 154980945,
+              "duration": 286800548,
               "status": "passed"
             },
             "match": {
@@ -126,7 +183,7 @@
           },
           {
             "result": {
-              "duration": 19859,
+              "duration": 22424,
               "status": "passed"
             },
             "match": {
@@ -135,7 +192,52 @@
           },
           {
             "result": {
-              "duration": 16930,
+              "duration": 17444,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 17312,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 16898,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 24356,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 28147,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TODO: Implement getLocation in similar fashion to ScalaStepDefinition"
+            }
+          },
+          {
+            "result": {
+              "duration": 59667,
               "status": "passed"
             },
             "match": {
@@ -148,19 +250,13 @@
         "steps": [
           {
             "result": {
-              "duration": 374215140,
+              "duration": 197460636,
               "status": "passed"
             },
-            "line": 32,
-            "name": "Scala files are read and performance test URLs are false ACCEPTANCE TESTS ARE CREATED",
+            "line": 36,
+            "name": "Scala files are read and a performance test is created",
             "match": {
-              "arguments": [
-                {
-                  "val": "false",
-                  "offset": 51
-                }
-              ],
-              "location": "CreateAcceptanceTestStepDefTemplate.scala:101"
+              "location": "CreatePerformanceTestStepDefTemplate.scala:56"
             },
             "keyword": "When "
           }

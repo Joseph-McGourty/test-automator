@@ -1,0 +1,237 @@
+package uk.gov.hmrc.perftests.vfr
+
+import uk.gov.hmrc.performance.conf.ServicesConfiguration
+import io.gatling.core.Predef._
+import io.gatling.http.Predef._
+
+object vfrRequests extends ServicesConfiguration {
+
+  val csrfPattern      = """<input type="hidden" name="csrfToken" value="([^"]+)""""
+  def saveCsrfToken()  = regex(_ => csrfPattern).saveAs("csrfToken")
+
+  lazy val navigateToUserstubbingservice = 
+    http("Navigate to User stubbing service page")
+      .get(UserStubbingServiceUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitUserstubbingservice = 
+    http("Submit to User stubbing service page")
+      .post(UserStubbingServiceUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+  lazy val navigateToAuthorityWizard = 
+    http("Navigate to Authority Wizard page")
+      .get(AuthorityWizardUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitAuthorityWizard = 
+    http("Submit to Authority Wizard page")
+      .post(AuthorityWizardUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .formParam("redirectionUrl", "http://localhost:9563/report-quarterly/income-and-expenses/sign-up/client")
+      .formParam("enrolment[0].name", "HMRC-AS-AGENT")
+      .formParam("input-0-0-name", "AgentReferenceNumber")
+      .formParam("input-0-0-value", "a")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToSignuptoreportyourclientsincomeandexpensesquarterly = 
+    http("Navigate to Sign up to report your client's income and expenses quarterly page")
+      .get(SignUpToReportYourClientsIncomeAndExpensesQuarterlyUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitSignuptoreportyourclientsincomeandexpensesquarterly = 
+    http("Submit to Sign up to report your client's income and expenses quarterly page")
+      .post(SignUpToReportYourClientsIncomeAndExpensesQuarterlyUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToEnteryourclientsdetails = 
+    http("Navigate to Enter your client's details page")
+      .get(EnterYourClientsDetailsUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitEnteryourclientsdetails = 
+    http("Submit to Enter your client's details page")
+      .post(EnterYourClientsDetailsUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .formParam("clientFirstName", "Test")
+      .formParam("clientLastName", "User")
+      .formParam("clientNino", "AA111111A")
+      .formParam("clientDateOfBirth.dateDay", "01")
+      .formParam("clientDateOfBirth.dateMonth", "01")
+      .formParam("clientDateOfBirth.dateYear", "1980")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToConfirmyourclient = 
+    http("Navigate to Confirm your client page")
+      .get(ConfirmYourClientUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitConfirmyourclient = 
+    http("Submit to Confirm your client page")
+      .post(ConfirmYourClientUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToSelectyourclientsincometype = 
+    http("Navigate to Select your client's income type page")
+      .get(SelectYourClientsIncomeTypeUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitSelectyourclientsincometype = 
+    http("Submit to Select your client's income type page")
+      .post(SelectYourClientsIncomeTypeUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToDoesyourclienthaveanyothersourcesofincome = 
+    http("Navigate to Does your client have any other sources of income page")
+      .get(DoesYourClientHaveAnyOtherSourcesOfIncomeUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitDoesyourclienthaveanyothersourcesofincome = 
+    http("Submit to Does your client have any other sources of income page")
+      .post(DoesYourClientHaveAnyOtherSourcesOfIncomeUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToBusinessaccountingperiod = 
+    http("Navigate to Business accounting period page")
+      .get(BusinessAccountingPeriodUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitBusinessaccountingperiod = 
+    http("Submit to Business accounting period page")
+      .post(BusinessAccountingPeriodUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToYoucantsendquarterlyreportsyet = 
+    http("Navigate to You can't send quarterly reports yet page")
+      .get(YouCantSendQuarterlyReportsYetUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitYoucantsendquarterlyreportsyet = 
+    http("Submit to You can't send quarterly reports yet page")
+      .post(YouCantSendQuarterlyReportsYetUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .formParam("startDate.dateDay", "01")
+      .formParam("startDate.dateMonth", "01")
+      .formParam("startDate.dateYear", "2019")
+      .formParam("endDate.dateDay", "01")
+      .formParam("endDate.dateMonth", "01")
+      .formParam("endDate.dateYear", "2020")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToBusinessname = 
+    http("Navigate to Business name page")
+      .get(BusinessNameUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitBusinessname = 
+    http("Submit to Business name page")
+      .post(BusinessNameUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .formParam("businessName", "Third Flow")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToAccountingmethod = 
+    http("Navigate to Accounting method page")
+      .get(AccountingMethodUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitAccountingmethod = 
+    http("Submit to Accounting method page")
+      .post(AccountingMethodUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToTermsofparticipation = 
+    http("Navigate to Terms of participation page")
+      .get(TermsOfParticipationUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitTermsofparticipation = 
+    http("Submit to Terms of participation page")
+      .post(TermsOfParticipationUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToCheckyouranswers = 
+    http("Navigate to Check your answers page")
+      .get(CheckYourAnswersUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitCheckyouranswers = 
+    http("Submit to Check your answers page")
+      .post(CheckYourAnswersUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToYoucantsignupyourclientyet = 
+    http("Navigate to You can't sign up your client yet page")
+      .get(YouCantSignUpYourClientYetUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitYoucantsignupyourclientyet = 
+    http("Submit to You can't sign up your client yet page")
+      .post(YouCantSignUpYourClientYetUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  lazy val navigateToYoucanonlysendquarterlyreportsonpartofyourclientsincome = 
+    http("Navigate to You can only send quarterly reports on part of your client's income page")
+      .get(YouCanOnlySendQuarterlyReportsOnPartOfYourClientsIncomeUrlFull)
+      .check(status.in(200))
+      .check(saveCsrfToken())
+
+  lazy val submitYoucanonlysendquarterlyreportsonpartofyourclientsincome = 
+    http("Submit to You can only send quarterly reports on part of your client's income page")
+      .post(YouCanOnlySendQuarterlyReportsOnPartOfYourClientsIncomeUrlFull)
+      .formParam("csrfToken", "${csrfToken}")
+      .check(status.is(303))
+//      .check(redirectionLocationIs())
+
+  val ConfirmYourClientUrlFull                                          = ""
+  val UserStubbingServiceUrlFull                                        = ""
+  val AccountingMethodUrlFull                                           = ""
+  val SelectYourClientsIncomeTypeUrlFull                                = ""
+  val YouCanOnlySendQuarterlyReportsOnPartOfYourClientsIncomeUrlFull    = ""
+  val BusinessNameUrlFull                                               = ""
+  val YouCantSendQuarterlyReportsYetUrlFull                             = ""
+  val YouCantSignUpYourClientYetUrlFull                                 = ""
+  val BusinessAccountingPeriodUrlFull                                   = ""
+  val TermsOfParticipationUrlFull                                       = ""
+  val SignUpToReportYourClientsIncomeAndExpensesQuarterlyUrlFull        = ""
+  val DoesYourClientHaveAnyOtherSourcesOfIncomeUrlFull                  = ""
+  val CheckYourAnswersUrlFull                                           = ""
+  val AuthorityWizardUrlFull                                            = ""
+  val EnterYourClientsDetailsUrlFull                                    = ""
+
+}

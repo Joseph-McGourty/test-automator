@@ -13,15 +13,35 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 183886732,
+  "duration": 51696341,
   "status": "passed"
 });
 formatter.before({
-  "duration": 31404,
+  "duration": 23107,
   "status": "passed"
 });
 formatter.before({
-  "duration": 14718,
+  "duration": 16665,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 16319,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 15274,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 14900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 19462,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 23156,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,43 +121,69 @@ formatter.scenario({
     {
       "line": 28,
       "value": "#####################################################################################################################################################################################"
+    },
+    {
+      "line": 30,
+      "value": "#  Scenario: Create Acceptance Tests"
+    },
+    {
+      "line": 31,
+      "value": "#"
+    },
+    {
+      "line": 32,
+      "value": "#    When Scala files are read and performance test URLs are false ACCEPTANCE TESTS ARE CREATED"
     }
   ],
-  "line": 30,
-  "name": "Create Acceptance Tests",
+  "line": 34,
+  "name": "Create Performance Test Without URLs",
   "description": "",
-  "id": "create-test-scripts;create-acceptance-tests",
+  "id": "create-test-scripts;create-performance-test-without-urls",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 32,
-  "name": "Scala files are read and performance test URLs are false ACCEPTANCE TESTS ARE CREATED",
+  "line": 36,
+  "name": "Scala files are read and a performance test is created",
   "keyword": "When "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "false",
-      "offset": 51
-    }
-  ],
-  "location": "CreateAcceptanceTestStepDefTemplate.scala:101"
+  "location": "CreatePerformanceTestStepDefTemplate.scala:56"
 });
 formatter.result({
-  "duration": 374215140,
+  "duration": 197460636,
   "status": "passed"
 });
 formatter.after({
-  "duration": 154980945,
+  "duration": 286800548,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19859,
+  "duration": 22424,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16930,
+  "duration": 17444,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17312,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16898,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 24356,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 28147,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 59667,
   "status": "passed"
 });
 });
