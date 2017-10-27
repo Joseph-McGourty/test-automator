@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: uk.gov.hmrc:scala-webdriver_2.11:4.24.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/scala-webdriver_2.11/jars/scala-webdriver_2.11-4.24.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/scala-webdriver_2.11/srcs/scala-webdriver_2.11-4.24.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

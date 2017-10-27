@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.jayway.restassured:rest-assured:2.2.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.jayway.restassured/rest-assured/jars/rest-assured-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.jayway.restassured/rest-assured/srcs/rest-assured-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
