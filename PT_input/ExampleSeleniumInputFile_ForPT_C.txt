@@ -1,0 +1,138 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class ExampleSeleniumInputFileForPTC {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "http://localhost:9561/report-quarterly/income-and-expenses/sign-up";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+  }
+
+  @Test
+  public void testExampleSeleniumInputFileForPTC() throws Exception {
+    driver.get("http://localhost:9949/auth-login-stub/gg-sign-in");
+    assertEquals("Authority Wizard", driver.getTitle());
+    driver.findElement(By.name("redirectionUrl")).clear();
+    driver.findElement(By.name("redirectionUrl")).sendKeys("http://localhost:9563/report-quarterly/income-and-expenses/sign-up/client");
+    driver.findElement(By.name("enrolment[0].name")).clear();
+    driver.findElement(By.name("enrolment[0].name")).sendKeys("HMRC-AS-AGENT");
+    driver.findElement(By.id("input-0-0-name")).clear();
+    driver.findElement(By.id("input-0-0-name")).sendKeys("AgentReferenceNumber");
+    driver.findElement(By.id("input-0-0-value")).clear();
+    driver.findElement(By.id("input-0-0-value")).sendKeys("a");
+    driver.findElement(By.cssSelector("input.button")).click();
+    assertEquals("Sign up to report your client's income and expenses quarterly", driver.getTitle());
+    driver.findElement(By.id("start-button")).click();
+    assertEquals("Enter your client's details", driver.getTitle());
+    driver.findElement(By.id("clientFirstName")).clear();
+    driver.findElement(By.id("clientFirstName")).sendKeys("Test");
+    driver.findElement(By.id("clientLastName")).clear();
+    driver.findElement(By.id("clientLastName")).sendKeys("User");
+    driver.findElement(By.id("clientNino")).clear();
+    driver.findElement(By.id("clientNino")).sendKeys("AA111111A");
+    driver.findElement(By.id("clientDateOfBirth.dateDay")).clear();
+    driver.findElement(By.id("clientDateOfBirth.dateDay")).sendKeys("01");
+    driver.findElement(By.id("clientDateOfBirth.dateMonth")).clear();
+    driver.findElement(By.id("clientDateOfBirth.dateMonth")).sendKeys("01");
+    driver.findElement(By.id("clientDateOfBirth.dateYear")).clear();
+    driver.findElement(By.id("clientDateOfBirth.dateYear")).sendKeys("1980");
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Confirm your client", driver.getTitle());
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Select your client's income type", driver.getTitle());
+    driver.findElement(By.xpath("//div[@id='content']/article/form/div/fieldset/label[3]")).click();
+    driver.findElement(By.id("incomeSource-Both")).click();
+    driver.findElement(By.id("continue-button")).click();
+    assertTrue(driver.getTitle().matches("^exact:Does your client have any other sources of income[\\s\\S]$"));
+    driver.findElement(By.xpath("//div[@id='content']/article/form/div/fieldset/label[2]")).click();
+    driver.findElement(By.id("choice-No")).click();
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Business accounting period", driver.getTitle());
+    driver.findElement(By.xpath("//div[@id='content']/article/form/div/fieldset/label")).click();
+    driver.findElement(By.id("accountingPeriodPrior-Yes")).click();
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("You can't send quarterly reports yet", driver.getTitle());
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Business accounting period", driver.getTitle());
+    driver.findElement(By.id("startDate.dateDay")).clear();
+    driver.findElement(By.id("startDate.dateDay")).sendKeys("01");
+    driver.findElement(By.id("startDate.dateMonth")).clear();
+    driver.findElement(By.id("startDate.dateMonth")).sendKeys("01");
+    driver.findElement(By.id("startDate.dateYear")).clear();
+    driver.findElement(By.id("startDate.dateYear")).sendKeys("2019");
+    driver.findElement(By.id("endDate.dateDay")).clear();
+    driver.findElement(By.id("endDate.dateDay")).sendKeys("01");
+    driver.findElement(By.id("endDate.dateMonth")).clear();
+    driver.findElement(By.id("endDate.dateMonth")).sendKeys("01");
+    driver.findElement(By.id("endDate.dateYear")).clear();
+    driver.findElement(By.id("endDate.dateYear")).sendKeys("2020");
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Business name", driver.getTitle());
+    driver.findElement(By.id("businessName")).clear();
+    driver.findElement(By.id("businessName")).sendKeys("Third Flow");
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Accounting method", driver.getTitle());
+    driver.findElement(By.xpath("//div[@id='content']/article/form/div/fieldset/label")).click();
+    driver.findElement(By.id("accountingMethod-Cash")).click();
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Terms of participation", driver.getTitle());
+    driver.findElement(By.id("continue-button")).click();
+    assertEquals("Check your answers", driver.getTitle());
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

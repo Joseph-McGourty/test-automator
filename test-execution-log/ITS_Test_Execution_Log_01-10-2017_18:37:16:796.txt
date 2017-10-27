@@ -1,0 +1,11 @@
+ITSA Test Execution Log - 01-10-2017_18:37:16:796
+
+No  | Scenario Name                  | Scenario Result   (Fail Details)
+_____________________________________________________________________________________________________________________________
+
+1   | Create Acceptance Tests        | FAILED WITH:                                                                                                                                                                                                          TRIMMED TO 200 CHARS
+    | DETAILS:                       |      Screen:      Field:      Field Value:      Scenario Screen Changes at Fail: 1
+_____________________________________________________________________________________________________________________________
+
+TOTALS
+SCENARIOS: 1   PASS: 0    FAIL: 1

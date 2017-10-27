@@ -1,0 +1,14 @@
+ITSA Test Execution Log - 01-10-2017_18:42:49:885
+
+No  | Scenario Name                  | Scenario Result   (Fail Details)
+_____________________________________________________________________________________________________________________________
+
+1   | Scenario Number 1              | SUCCESS
+2   | Acc Period Repeat              | SUCCESS
+3   | Acc Period Repeat              | SUCCESS
+4   | Acc Period Repeat              | SUCCESS
+5   | Change User Inputs             | SUCCESS
+_____________________________________________________________________________________________________________________________
+
+TOTALS
+SCENARIOS: 5   PASS: 5    FAIL: 0
