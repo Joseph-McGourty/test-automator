@@ -135,6 +135,41 @@ object ParametersTemplate {
   // If remoig these parameters to re-generate them, also remove the StepDefinitions as they will not compile without the parameters
   def getParam(paramName: String): String = {
     val returnUrl: String = paramName match {
+      case "clickAccountingMethodAccruals"                                                          => "accountingMethod-Accruals"
+      case "clickAccountingMethodCash"                                                              => "accountingMethod-Cash"
+      case "clickAccountingMethodEdit"                                                              => "accountingMethod-edit"
+      case "clickAccountingPeriodDateEdit"                                                          => "accountingPeriodDate-edit"
+      case "clickAccountingPeriodPriorNo"                                                           => "accountingPeriodPrior-No"
+      case "clickAccountingPeriodPriorYes"                                                          => "accountingPeriodPrior-Yes"
+      case "clickBack"                                                                              => "back"
+      case "clickBusinessNameEdit"                                                                  => "businessName-edit"
+      case "clickChoiceNo"                                                                          => "choice-No"
+      case "clickChoiceYes"                                                                         => "choice-Yes"
+      case "clickContinueButton"                                                                    => "continue-button"
+      case "clickIncomeSourceBoth"                                                                  => "incomeSource-Both"
+      case "clickIncomeSourceBusiness"                                                              => "incomeSource-Business"
+      case "clickIncomeSourceEdit"                                                                  => "incomeSource-edit"
+      case "clickIncomeSourceOther"                                                                 => "incomeSource-Other"
+      case "clickIncomeSourceProperty"                                                              => "incomeSource-Property"
+      case "clickInputButton"                                                                       => "input.button"
+      case "clickOtherIncomeEdit"                                                                   => "otherIncome-edit"
+      case "clickStartButton"                                                                       => "start-button"
+      case "urlAccountingMethod"                                                                    => ""
+      case "urlAuthorityWizard"                                                                     => ""
+      case "urlBusinessAccountingPeriod"                                                            => ""
+      case "urlBusinessName"                                                                        => ""
+      case "urlCheckYourAnswers"                                                                    => ""
+      case "urlClient/testOnly"                                                                     => basePageUrl + "/test-only/stub-client"
+      case "urlConfirmYourClient"                                                                   => ""
+      case "urlDoesYourClientHaveAnyOtherSourcesOfIncome"                                           => ""
+      case "urlEnterYourClientsDetails"                                                             => ""
+      case "urlSelectYourClientsIncomeType"                                                         => ""
+      case "urlSignUpToReportYourClientsIncomeAndExpensesQuarterly"                                 => ""
+      case "urlTermsOfParticipation"                                                                => ""
+      case "urlUserStubbingService"                                                                 => ""
+      case "urlYouCanOnlySendQuarterlyReportsOnPartOfYourClientsIncome"                             => ""
+      case "urlYouCantSendQuarterlyReportsYet"                                                      => ""
+      case "urlYouCantSignUpYourClientYet"                                                          => ""
 
       case _ => paramName
 
@@ -143,5 +178,24 @@ object ParametersTemplate {
     returnUrl
 
   }
+
+  val fieldBusinessName                            = "businessName"
+  val fieldClientDateOfBirthDateDay                = "clientDateOfBirth.dateDay"
+  val fieldClientDateOfBirthDateMonth              = "clientDateOfBirth.dateMonth"
+  val fieldClientDateOfBirthDateYear               = "clientDateOfBirth.dateYear"
+  val fieldClientFirstName                         = "clientFirstName"
+  val fieldClientLastName                          = "clientLastName"
+  val fieldClientNino                              = "clientNino"
+  val fieldEndDateDateDay                          = "endDate.dateDay"
+  val fieldEndDateDateMonth                        = "endDate.dateMonth"
+  val fieldEndDateDateYear                         = "endDate.dateYear"
+  val fieldEnrolment0Name                          = "enrolment[0].name"
+  val fieldInput00Name                             = "input-0-0-name"
+  val fieldInput00Value                            = "input-0-0-value"
+  val fieldRedirectionUrl                          = "redirectionUrl"
+  val fieldStartDateDateDay                        = "startDate.dateDay"
+  val fieldStartDateDateMonth                      = "startDate.dateMonth"
+  val fieldStartDateDateYear                       = "startDate.dateYear"
+
 
 }

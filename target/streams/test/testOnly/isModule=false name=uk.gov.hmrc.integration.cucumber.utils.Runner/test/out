@@ -1,0 +1,54 @@
+[0m[[31merror[0m] [0mTest [33mScenario: Create Acceptance Tests[0m failed: java.io.[31mFileNotFoundException[0m: /home/joseph/Applications/test-automator/test-execution-log/ITS_Test_Execution_Log_27-10-2017_10:25:47:181.txt (No such file or directory)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.open0(Native Method)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.open(FileOutputStream.java:270)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.<init>(FileOutputStream.java:213)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.<init>(FileOutputStream.java:133)[0m
+[0m[[31merror[0m] [0m    at java.io.FileWriter.<init>(FileWriter.java:78)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.utils.UtilitiesTemplate$.logResult(UtilitiesTemplate.scala:127)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.stepdefs.BaseStepDefTemplate$$anonfun$4.apply(BaseStepDefTemplate.scala:29)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.stepdefs.BaseStepDefTemplate$$anonfun$4.apply(BaseStepDefTemplate.scala:25)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.scala.ScalaHookDefinition.execute(ScalaHookDefinition.scala:18)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runHooks(Runtime.java:211)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:205)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)[0m
+[0m[[31merror[0m] [0m    ...[0m
+[0m[[31merror[0m] [0mTest [33mScenario: Create Acceptance Tests[0m failed: java.io.[31mFileNotFoundException[0m: /home/joseph/Applications/test-automator/test-execution-log/ITS_Test_Execution_Log_27-10-2017_10:25:47:181.txt (No such file or directory)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.open0(Native Method)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.open(FileOutputStream.java:270)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.<init>(FileOutputStream.java:213)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.<init>(FileOutputStream.java:133)[0m
+[0m[[31merror[0m] [0m    at java.io.FileWriter.<init>(FileWriter.java:78)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.utils.UtilitiesTemplate$.logResult(UtilitiesTemplate.scala:127)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.stepdefs.CreatePerformanceTestStepDefTemplate$$anonfun$7.apply(CreatePerformanceTestStepDefTemplate.scala:753)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.stepdefs.CreatePerformanceTestStepDefTemplate$$anonfun$7.apply(CreatePerformanceTestStepDefTemplate.scala:747)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.scala.ScalaHookDefinition.execute(ScalaHookDefinition.scala:18)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runHooks(Runtime.java:211)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:205)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)[0m
+[0m[[31merror[0m] [0m    ...[0m
+[0m[[31merror[0m] [0mTest [33mScenario: Create Acceptance Tests[0m failed: java.io.[31mFileNotFoundException[0m: /home/joseph/Applications/test-automator/test-execution-log/ITS_Test_Execution_Log_27-10-2017_10:25:47:181.txt (No such file or directory)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.open0(Native Method)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.open(FileOutputStream.java:270)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.<init>(FileOutputStream.java:213)[0m
+[0m[[31merror[0m] [0m    at java.io.FileOutputStream.<init>(FileOutputStream.java:133)[0m
+[0m[[31merror[0m] [0m    at java.io.FileWriter.<init>(FileWriter.java:78)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.utils.UtilitiesTemplate$.logResult(UtilitiesTemplate.scala:127)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.stepdefs.CreateAcceptanceTestStepDefTemplate$$anonfun$7.apply(CreateAcceptanceTestStepDefTemplate.scala:1708)[0m
+[0m[[31merror[0m] [0m    at uk.gov.hmrc.integration.cucumber.stepdefs.CreateAcceptanceTestStepDefTemplate$$anonfun$7.apply(CreateAcceptanceTestStepDefTemplate.scala:1702)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.scala.ScalaHookDefinition.execute(ScalaHookDefinition.scala:18)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runHooks(Runtime.java:211)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:205)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)[0m
+[0m[[31merror[0m] [0m    at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)[0m
+[0m[[31merror[0m] [0m    ...[0m
