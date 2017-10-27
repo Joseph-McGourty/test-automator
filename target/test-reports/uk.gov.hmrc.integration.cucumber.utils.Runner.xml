@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="ddct-55" name="uk.gov.hmrc.integration.cucumber.utils.Runner" tests="42" errors="0" failures="0" time="-0.042">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/><property name="java.vm.version" value="25.111-b14"/><property name="browser" value="chrome"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=":"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="GB"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/home/joseph/Applications/hmrc-development-environment/test-automator"/><property name="java.runtime.version" value="1.8.0_111-b14"/><property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/><property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="/tmp"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Linux"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="java.library.path" value="/home/joseph/idea-IC-162.1447.26/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="4.4.0-83-generic"/><property name="user.home" value="/home/joseph"/><property name="user.timezone" value="Europe/London"/><property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/usr/share/sbt-launcher-packaging/bin/sbt-launch.jar"/><property name="user.name" value="joseph"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/usr/share/sbt-launcher-packaging/bin/sbt-launch.jar test-only uk.gov.hmrc.integration.cucumber.utils.Runner"/><property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.X11.XToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_111"/><property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/><property name="webdriver.chrome.driver" value="/usr/local/bin/chromedriver"/><property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/><property name="environment" value="local"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.desktop" value="gnome"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+                     <testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Given we start on URL 'http://localhost:9563/report-quarterly/income-and-expenses/sign-up/client/test-only/stub-client'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="When User stubbing service where select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Then TEST_DELAY = 100" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And User stubbing service where then navigate to 'http://localhost:9949/auth-login-stub/gg-sign-in'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Authority Wizard where 'fieldRedirectionUrl' is 'http://localhost:9563/report-quarterly/income-and-expenses/sign-up/client' and 'fieldEnrolment0Name' is 'HMRC-AS-AGENT' and 'fieldInput00Name' is 'AgentReferenceNumber' and 'fieldInput00Value' is 'a' and select 'clickInputButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Then TEST_DELAY = 0" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Sign up to report your client's income and expenses quarterly where select 'clickStartButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Then PAUSE" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Enter your client's details where 'fieldClientFirstName' is 'Test' and 'fieldClientLastName' is 'User' and 'fieldClientNino' is 'AA111111A' and 'fieldClientDateOfBirthDateDay' is '01' and 'fieldClientDateOfBirthDateMonth' is '01' and 'fieldClientDateOfBirthDateYear' is '1980' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Confirm your client where select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Select your client's income type where select 'clickIncomeSourceBoth' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Does your client have any other sources of income where select 'clickChoiceNo' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Then Business accounting period where select 'clickAccountingPeriodPriorNo' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Scenario: Scenario Number 1" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="When Business accounting period where 'fieldStartDateDateDay' is '01' and 'fieldStartDateDateMonth' is '01' and 'fieldStartDateDateYear' is '2018' and 'fieldEndDateDateDay' is '01' and 'fieldEndDateDateMonth' is '01' and 'fieldEndDateDateYear' is '2019' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Business name where 'fieldBusinessName' is 'Test Business' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Accounting method where select 'clickAccountingMethodAccruals' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Terms of participation where select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Check your answers where select 'clickBack'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Terms of participation where select 'clickBack'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Accounting method choose select 'clickBack'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Then Business name where select 'clickBack'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="| 01 | 01 | 2018 | 01 | 01 | 2019 | Test Business |" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="When Business accounting period with 'fieldStartDateDateDay' is '12' and 'fieldStartDateDateMonth' is '12' and 'fieldEndDateDateDay' is '12' and 'fieldEndDateDateMonth' is '12' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Business name where select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Accounting method where select 'clickAccountingMethodCash' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Terms of participation where select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Check your answers where select 'clickIncomeSourceEdit'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Select your client's income type press select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Check your answers where select 'clickOtherIncomeEdit'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Does your client have any other sources of income where select 'clickChoiceYes' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And You can only send quarterly reports on part of your client's income where select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Business accounting period press select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Business accounting period push select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Accounting method choose select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Check your answers where select 'clickAccountingPeriodDateEdit'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Business accounting period with 'fieldStartDateDateDay' is '11' and 'fieldStartDateDateMonth' is '11' and 'fieldEndDateDateDay' is '11' and 'fieldEndDateDateMonth' is '11' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Check your answers where select 'clickBusinessNameEdit'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Business name where 'fieldBusinessName' is 'Test Businesses' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="And Check your answers where select 'clickAccountingMethodEdit'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Then Accounting method where select 'clickAccountingMethodAccruals' and select 'clickContinueButton'" time="-0.001">
+                                                 
+                                               </testcase><testcase classname="uk.gov.hmrc.integration.cucumber.utils.Runner" name="Scenario: Change User Inputs" time="-0.001">
+                                                 
+                                               </testcase>
+                     <system-out></system-out>
+                     <system-err></system-err>
+                   </testsuite>
